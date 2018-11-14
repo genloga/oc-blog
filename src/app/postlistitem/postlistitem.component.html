@@ -1,0 +1,18 @@
+<div class="items" [ngClass]="{'list-group-item-success': nbreLoveIt > nbreDontLoveIt ,
+                               'list-group-item-danger': nbreDontLoveIt > nbreLoveIt }">
+  <div class="entete">
+    <span class="title">
+      <h2> {{ title }} </h2>
+    </span>
+      <span class="creationDate">
+        {{ created_at | date: 'MM/d/y' }} , {{ created_at | date: 'shortTime'}}
+      </span>
+  </div>
+    <div class="content">
+      {{ content }}
+    </div>
+    <div class="boutons">
+      <button class="btn btn-success" (click)="onLoveIt()">Love it</button> 
+      <button class="btn btn-danger" (click)="onDontLoveIt()">Dont Love it</button>
+    </div>
+</div>

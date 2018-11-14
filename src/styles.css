@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.items {
+    margin: 1px;
+    border-radius: 4px;
+}
+
+.entete {
+    padding: 5px;
+}
+
+span.creationDate {
+    float: right;
+}
+
+.content {
+    padding: 0 0 5px 5px;
+}
+
+div.boutons {
+    padding: 0 0 5px 5px;
+}
+div.boutons button{
+    margin-right: 5px;
+}
